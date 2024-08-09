@@ -15,17 +15,21 @@ shortTitle: Billing for GitHub Copilot
 
 {% endif %}
 
-## About billing for {% data variables.product.prodname_copilot %}
+## About billing for {% data variables.product.prodname_copilot_short %}
+
+{% ifversion billing-auth-and-capture %}
+
+{% data reusables.billing.authorization-charge %}
+
+{% endif %}
 
 You can set up a {% data variables.product.prodname_copilot %} subscription for your personal account, or for an organization or enterprise.
 
 * **For your personal account**, you can set up a subscription to {% data variables.product.prodname_copilot_for_individuals %}.
 * **For an organization**, you can set up a subscription to {% data variables.product.prodname_copilot_for_business %}, then grant access to members.
-* **For an enterprise on {% data variables.product.prodname_ghe_cloud %}**, you can set up a subscription to {% data variables.product.prodname_copilot_for_business %} or {% data variables.product.prodname_copilot_enterprise %}, then allow organizations to grant access to members.
+* **For an enterprise on {% data variables.product.prodname_ghe_cloud %}**, you can set up a subscription to {% data variables.product.prodname_copilot_for_business %} or {% data variables.product.prodname_copilot_enterprise %}, then allow organizations to grant access to members. Enterprises with a {% data variables.product.prodname_copilot_enterprise_short %} subscription can assign either {% data variables.product.prodname_copilot_enterprise_short %} or {% data variables.product.prodname_copilot_business_short %} to each organization in the enterprise.
 
-A free subscription for {% data variables.product.prodname_copilot %} is available to verified students, teachers, and maintainers of popular open-source repositories on {% data variables.product.company_short %}. If you meet the criteria as an open source maintainer, you will be automatically notified when you visit the {% data variables.product.prodname_copilot %} subscription page. As a student, if you receive the {% data variables.product.prodname_student_pack %}, you will also be offered a free subscription when you visit the {% data variables.product.prodname_copilot %} subscription page. For more information about the {% data variables.product.prodname_student_pack %}, see "[AUTOTITLE](/free-pro-team@latest/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-students/apply-to-github-global-campus-as-a-student)."
-
-{% data reusables.billing.billing-info %}
+> [!NOTE] A free subscription for {% data variables.product.prodname_copilot %} is available to verified students, teachers, and maintainers of popular open-source repositories on {% data variables.product.company_short %}. See "[AUTOTITLE](/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/getting-free-access-to-copilot-as-a-student-teacher-or-maintainer)."
 
 ## About billing for {% data variables.product.prodname_copilot_for_individuals %}
 
